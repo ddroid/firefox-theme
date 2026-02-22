@@ -81,21 +81,8 @@
 				}
 			}
 
-			/* Maximize button - Yellow */
+			/* Maximize button - Green */
 			&.titlebar-max {
-				background: #eed49f !important;
-
-				&:not([disabled]):hover {
-					background: #f5d490 !important;
-				}
-
-				&:not([disabled]):active {
-					background: #e4c777 !important;
-				}
-			}
-
-			/* Minimize button - Green */
-			&.titlebar-min {
 				background: #a6da95 !important;
 
 				&:not([disabled]):hover {
@@ -107,8 +94,8 @@
 				}
 			}
 
-			/* Restore button - Gray */
-			&.titlebar-restore {
+			/* Minimize button - Yellow */
+			&.titlebar-min {
 				background: #eed49f !important;
 
 				&:not([disabled]):hover {
@@ -117,6 +104,19 @@
 
 				&:not([disabled]):active {
 					background: #e4c777 !important;
+				}
+			}
+
+			/* Restore button - Green */
+			&.titlebar-restore {
+				background: #a6da95 !important;
+
+				&:not([disabled]):hover {
+					background: #b3e1a9 !important;
+				}
+
+				&:not([disabled]):active {
+					background: #8bc47c !important;
 				}
 			}
 		}
