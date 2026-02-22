@@ -52,9 +52,9 @@
 		.titlebar-button {
 			background: var(--gnome-button-background) !important;
 			border-radius: 100% !important;
-			height: 24px !important;
+			height: 16px !important;
 			transition: background var(--gnome-animation-time);
-			width: 24px !important;
+			width: 16px !important;
 
 			&:not([disabled]):hover {
 				background: var(--gnome-button-hover-background) !important;
@@ -66,6 +66,58 @@
 
 			&::-moz-window-inactive {
 				filter: opacity(0.5);
+			}
+
+			/* Close button - Red */
+			&.titlebar-close {
+				background: #ed8796 !important;
+
+				&:not([disabled]):hover {
+					background: #e78284 !important;
+				}
+
+				&:not([disabled]):active {
+					background: #d14f56 !important;
+				}
+			}
+
+			/* Maximize button - Yellow */
+			&.titlebar-max {
+				background: #eed49f !important;
+
+				&:not([disabled]):hover {
+					background: #f5d490 !important;
+				}
+
+				&:not([disabled]):active {
+					background: #e4c777 !important;
+				}
+			}
+
+			/* Minimize button - Green */
+			&.titlebar-min {
+				background: #a6da95 !important;
+
+				&:not([disabled]):hover {
+					background: #b3e1a9 !important;
+				}
+
+				&:not([disabled]):active {
+					background: #8bc47c !important;
+				}
+			}
+
+			/* Restore button - Gray */
+			&.titlebar-restore {
+				background: #eed49f !important;
+
+				&:not([disabled]):hover {
+					background: #f5d490 !important;
+				}
+
+				&:not([disabled]):active {
+					background: #e4c777 !important;
+				}
 			}
 		}
 	}
@@ -80,8 +132,7 @@
 
 			.titlebar-button {
 				padding: 0 !important;
-				margin: 0 !important;			
-				
+				margin: 0 !important;				
 				& > .toolbarbutton-icon {					
 					@media not -moz-pref("gnomeTheme.noThemedIcons") {
 						background: none !important;
@@ -91,14 +142,22 @@
 						stroke: none !important;
 						width: 16px !important;
 						-moz-context-properties: fill, fill-opacity !important;
+						opacity: 0;
+						transition: opacity 0.2s ease;
 					}
 					
+				}
+
+				&:hover > .toolbarbutton-icon {
+					@media not -moz-pref("gnomeTheme.noThemedIcons") {
+						opacity: 1;
+					}
 				}
 
 				@media -moz-pref("widget.gtk.non-native-titlebar-buttons.enabled") {
 					&:-moz-lwtheme { /* Override config */
 						& > .toolbarbutton-icon {
-							appearance: auto !important
+							appearance: auto !important;
 						}
 					}
 				}
