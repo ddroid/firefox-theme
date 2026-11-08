@@ -55,8 +55,8 @@
 	
 	/* Colors */
 	--gnome-standalone-color-oklab: min(l, 0.5) a b;
-	--gnome-accent-bg: AccentColor;
-	--gnome-accent: oklab(from var(--gnome-accent-bg) var(--gnome-standalone-color-oklab));
+	--gnome-accent-bg: #1e66f5;
+	--gnome-accent: #1e66f5;
 	--gnome-destructive-bg: #d20f39;
 	--gnome-destructive: oklab(from var(--gnome-destructive-bg) var(--gnome-standalone-color-oklab));
 	--gnome-success-bg: #40a02b;
@@ -103,6 +103,7 @@
 	/* Toolbars */
 	--gnome-toolbar-background: var(--gnome-headerbar-background);
 	--gnome-toolbar-border-color: var(--gnome-headerbar-shade-color);
+	--gnome-toolbar-icon-fill: #4c4f69;
 	
 	/* Elements */
 	--gnome-border-color: color-mix(in srgb, currentColor 15%, transparent);
@@ -141,7 +142,7 @@
 	--gnome-tabbar-tab-active-background: color-mix(in srgb, currentColor 10%, var(--gnome-tabbar-background));
 	--gnome-tabbar-tab-active-background-contrast: color-mix(in srgb, currentColor 20%, var(--gnome-tabbar-background));
 	--gnome-tabbar-tab-active-hover-background: color-mix(in srgb, currentColor 13%, var(--gnome-tabbar-background));
-	--gnome-tabbar-tab-needs-attetion: var(--gnome-palette-blue-2);
+	--gnome-tabbar-tab-needs-attetion: var(--gnome-accent);
 	
 	--gnome-tabbar-identity-color-blue: #1e66f5;
 	--gnome-tabbar-identity-color-turquoise: #179299;
@@ -151,6 +152,17 @@
 	--gnome-tabbar-identity-color-red: #d20f39;
 	--gnome-tabbar-identity-color-pink: #ea76cb;
 	--gnome-tabbar-identity-color-purple: #8839ef;
+
+	/* Tab groups - Catppuccin Latte */
+	--gnome-group-blue: #1e66f5;
+	--gnome-group-purple: #8839ef;
+	--gnome-group-cyan: #179299;
+	--gnome-group-orange: #fe640b;
+	--gnome-group-yellow: #df8e1d;
+	--gnome-group-pink: #ea76cb;
+	--gnome-group-green: #40a02b;
+	--gnome-group-gray: #8c8fa1;
+	--gnome-group-red: #d20f39;
 
 	/* Miscellaneous */
 	--gnome-shade-color: rgba(76, 79, 105, 0.07);

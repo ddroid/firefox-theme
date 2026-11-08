@@ -747,15 +747,15 @@ tab-group {
  * the palette tokens is enough to recolour every group.
  * Bases are GNOME's accent palette; the tints follow Adwaita's oklab derivation. */
 :root {
-	--gnome-group-blue: #3584e4;
-	--gnome-group-purple: #9141ac;
-	--gnome-group-cyan: #2190a4;
-	--gnome-group-orange: #ed5b00;
-	--gnome-group-yellow: #c88800;
-	--gnome-group-pink: #d56199;
-	--gnome-group-green: #3a944a;
-	--gnome-group-gray: #6f8396;
-	--gnome-group-red: #e62d42;
+	--gnome-group-blue: var(--gnome-tabbar-identity-color-blue, #8aadf4);
+	--gnome-group-purple: var(--gnome-tabbar-identity-color-purple, #c6a0f6);
+	--gnome-group-cyan: var(--gnome-tabbar-identity-color-turquoise, #8bd5ca);
+	--gnome-group-orange: var(--gnome-tabbar-identity-color-orange, #f5a97f);
+	--gnome-group-yellow: var(--gnome-tabbar-identity-color-yellow, #eed49f);
+	--gnome-group-pink: var(--gnome-tabbar-identity-color-pink, #f5bde6);
+	--gnome-group-green: var(--gnome-tabbar-identity-color-green, #a6da95);
+	--gnome-group-gray: var(--gnome-palette-dark-1, #8087a2);
+	--gnome-group-red: var(--gnome-tabbar-identity-color-red, #ed8796);
 
 	--tab-group-blue: var(--gnome-group-blue) !important;
 	--tab-group-blue-hover: oklch(from var(--gnome-group-blue) calc(l - 0.06) c h) !important;

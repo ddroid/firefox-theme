@@ -33,17 +33,48 @@
 		/* Toolbars */
 		--gnome-toolbar-icon-fill: #cad3f5;
 
+		/* Focus & Selection */
+		--gnome-focus-border-color: color-mix(in srgb, var(--gnome-accent) 50%, transparent);
+		--gnome-selection-bg: color-mix(in srgb, var(--gnome-accent-bg) 30%, transparent);
+
+		/* View selection */
+		--gnome-view-selected-background: color-mix(in srgb, var(--gnome-accent-bg) 25%, transparent);
+		--gnome-view-selected-hover-background: color-mix(in srgb, var(--gnome-accent-bg) 32%, transparent);
+		--gnome-view-selected-active-background: color-mix(in srgb, var(--gnome-accent-bg) 39%, transparent);
+
+		/* Buttons */
+		--gnome-button-suggested-background: var(--gnome-accent-bg);
+
+		/* Entries */
+		--gnome-entry-focused-border-color: color-mix(in srgb, var(--gnome-accent) 50%, transparent);
+		--gnome-entry-error-focused-border-color: color-mix(in srgb, var(--gnome-error-bg, #ed8796) 50%, transparent);
+
 		/* Tabs */
+		--gnome-tabbar-tab-needs-attetion: var(--gnome-accent);
 		--gnome-tabbar-tab-hover-background: #2a2d3d; /* Hardcoded color */
 		--gnome-tabbar-tab-active-background: #1e2030; /* Hardcoded color */
 		--gnome-tabbar-tab-active-background-contrast: #494d64; /* Hardcoded color */
 		--gnome-tabbar-tab-active-hover-background: #252840; /* Hardcoded color */
 		
+		--gnome-tabbar-identity-color-blue: #8aadf4;
+		--gnome-tabbar-identity-color-turquoise: #8bd5ca;
 		--gnome-tabbar-identity-color-green: #a6da95;
 		--gnome-tabbar-identity-color-yellow: #eed49f;
 		--gnome-tabbar-identity-color-orange: #f5a97f;
 		--gnome-tabbar-identity-color-red: #ed8796;
+		--gnome-tabbar-identity-color-pink: #f5bde6;
 		--gnome-tabbar-identity-color-purple: #c6a0f6;
+
+		/* Tab groups - Catppuccin Macchiato */
+		--gnome-group-blue: #8aadf4;
+		--gnome-group-purple: #c6a0f6;
+		--gnome-group-cyan: #8bd5ca;
+		--gnome-group-orange: #f5a97f;
+		--gnome-group-yellow: #eed49f;
+		--gnome-group-pink: #f5bde6;
+		--gnome-group-green: #a6da95;
+		--gnome-group-gray: #8087a2;
+		--gnome-group-red: #ed8796;
 		
 		/* Text color for Firefox Logo in new private tab */
 		--gnome-private-wordmark: #cad3f5;
